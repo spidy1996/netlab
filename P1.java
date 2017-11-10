@@ -40,13 +40,13 @@ public class P1 {
 		System.out.println("gen bits are:");
 		for(i=0; i<gen_b; i++)
 			System.out.println(gen[i]);
+		rcm = computecrc(app_msg, gen, rcm);
 		System.out.println("Appended msg is:");
 		for(i=0; i<app_msg.length; i++)
 		{
 			System.out.println(app_msg[i]);
 			rcm[i] = app_msg[i];
 		}
-		rcm = computecrc(app_msg, gen, rcm);
 		for(i=0; i<app_msg.length; i++)
 			trans_msg[i] = (app_msg[i]^rcm[i]);
 		System.out.println("Transmitted msg from transmission is");
