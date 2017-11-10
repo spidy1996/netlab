@@ -42,9 +42,10 @@ public class P1 {
 			System.out.println(gen[i]);
 		System.out.println("Appended msg is:");
 		for(i=0; i<app_msg.length; i++)
+		{
 			System.out.println(app_msg[i]);
-		for(i=0; i<app_msg.length; i++)
 			rcm[i] = app_msg[i];
+		}
 		rcm = computecrc(app_msg, gen, rcm);
 		for(i=0; i<app_msg.length; i++)
 			trans_msg[i] = (app_msg[i]^rcm[i]);
