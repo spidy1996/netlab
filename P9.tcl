@@ -75,7 +75,7 @@ exit 0
 
 $ns at 0.1 "$ftp0 start"
 $ns at 5 "$ftp0 stop"
-$ns at 7 "$ftp2 start"
+$ns at 7 "$ftp0 start"
 $ns at 0.2 "$ftp2 start"
 $ns at 8 "$ftp2 stop"
 $ns at 14 "$ftp0 stop"
